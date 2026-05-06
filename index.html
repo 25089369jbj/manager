@@ -2,7 +2,19 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>운정 아이파크 포레스트 - 마지막 분양 기회</title>
+
+<!-- 카카오톡/SNS 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="운정 아이파크 포레스트 - 마지막 최초 분양">
+<meta property="og:description" content="현대산업개발 시공 · 3,250세대 대단지 · GTX-A 강남 20분대 · 계약금 5%만 · 청약통장 無 · 실거주 의무 無">
+<meta property="og:image" content="https://25089369jbj.github.io/manager/ipark_hero.jpg">
+<meta property="og:url" content="https://25089369jbj.github.io/manager/">
+<meta property="og:site_name" content="운정 아이파크 포레스트">
+<meta property="og:image:width" content="2649">
+<meta property="og:image:height" content="911">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Pretendard:wght@300;400;500;600;700;800;900&family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
@@ -566,6 +578,217 @@
     margin-bottom: 8px;
     letter-spacing: 6px;
     font-weight: 600;
+  }
+  
+  /* ========================================
+     📱 MOBILE - 폰에서 글씨 크게 보이도록
+     ======================================== */
+  @media (max-width: 768px) {
+    .hero-image-wrap {
+      height: 480px;
+    }
+    
+    .hero-overlay {
+      padding: 36px 28px 0;
+    }
+    
+    .hero-eyebrow {
+      font-size: 13px;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
+    }
+    
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      width: 20px;
+    }
+    
+    .hero-brand {
+      font-size: 13px;
+      letter-spacing: 5px;
+      margin-bottom: 14px;
+    }
+    
+    .hero-title {
+      font-size: 44px;
+      letter-spacing: -2px;
+      line-height: 1.15;
+    }
+    
+    .hero-bottom {
+      padding: 28px;
+    }
+    
+    .hero-tagline {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    
+    /* 통계 - 2x2 그리드로 변경 */
+    .stats-bar {
+      padding: 28px 24px;
+    }
+    
+    .hero-stats {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 0;
+    }
+    
+    .stat-item {
+      padding: 0 12px;
+      border-right: none;
+    }
+    
+    .stat-item:nth-child(1), .stat-item:nth-child(2) {
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(184, 137, 90, 0.2);
+    }
+    
+    .stat-item:nth-child(1), .stat-item:nth-child(3) {
+      border-right: 1px solid rgba(184, 137, 90, 0.2);
+    }
+    
+    .stat-num {
+      font-size: 36px;
+    }
+    
+    .stat-label {
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    
+    /* 긴급바 */
+    .urgent {
+      padding: 16px 24px;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    .urgent-right {
+      font-size: 12px;
+    }
+    
+    /* 핵심 혜택 - 1단으로 */
+    .core {
+      padding: 56px 24px;
+    }
+    
+    .section-label {
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    
+    .section-title {
+      font-size: 28px;
+      letter-spacing: -1px;
+    }
+    
+    .core-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .core-item {
+      padding: 32px 28px;
+    }
+    
+    .core-headline {
+      font-size: 24px;
+    }
+    
+    .core-desc {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    
+    /* 특장점 - 1단으로 */
+    .feature {
+      padding: 56px 24px;
+    }
+    
+    .feature-grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    
+    .feature-block-title {
+      font-size: 22px;
+    }
+    
+    .feature-block-title .num {
+      font-size: 32px;
+    }
+    
+    .feature-list li {
+      font-size: 16px;
+      padding: 16px 0;
+      line-height: 1.6;
+    }
+    
+    /* 강조 인용구 */
+    .highlight-quote {
+      padding: 56px 28px;
+    }
+    
+    .quote-mark {
+      font-size: 70px;
+    }
+    
+    .quote-text {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+    
+    .quote-sub {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    
+    /* 담당자 카드 */
+    .contact {
+      padding: 40px 24px;
+    }
+    
+    .contact-card {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 36px 32px;
+      text-align: center;
+    }
+    
+    .contact-label {
+      font-size: 13px;
+      letter-spacing: 3px;
+    }
+    
+    .contact-name {
+      font-size: 28px;
+    }
+    
+    .contact-role {
+      font-size: 15px;
+    }
+    
+    .contact-phone-label {
+      text-align: center;
+      font-size: 13px;
+    }
+    
+    .contact-phone {
+      font-size: 38px;
+    }
+    
+    /* 푸터 */
+    .footer {
+      padding: 28px 24px;
+      font-size: 12px;
+    }
+    
+    .footer-mark {
+      font-size: 15px;
+      letter-spacing: 4px;
+    }
   }
 </style>
 </head>
